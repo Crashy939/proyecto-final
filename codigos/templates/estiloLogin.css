@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('fuentes/Roboto/Roboto-Medium.ttf');
+}
+body{
+    background: linear-gradient(to right, #92cace, #5faab1, #5faab1, #3b757f, #356169);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto';
+}
+.form{
+    min-width: 500px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 9px;
+    box-shadow: 10px 5px 50px 20px black;
+    min-height: 300px;
+}
+.form h1{
+    text-align: center;
+    font-size: 24px;
+    padding: 0 0 15px 0;
+    border-bottom: 1px groove #1a2c32;
+    line-height: 1.8;
+    color: #1a2c32;
+    font-weight: 600;
+}
+.form form{
+    padding: 0 40px;
+}
+.nombreUsuario{
+    position: relative;
+}
+.contrasenaUsuario{
+    position: relative;
+}
+.nombreUsuario input, .contrasenaUsuario input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+}
+.nombreUsuario input{
+    margin-bottom: 12px;
+    border-bottom: #1a2c32 2px solid;
+}
+.contrasenaUsuario input{
+    margin-bottom: 12px;
+    padding-top: 8px ;
+    border-bottom: #1a2c32 2px solid;
+}
+.key{
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+}
+.person{
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+}
+.iniciarSesion{
+    position: relative;
+    border: none;
+    background: none;
+    border: #1a2c32 1px solid;
+    background: linear-gradient(to right, #54ff5d,#01e116, #00b415);
+    text-align: center;
+    left: 30%;
+}
+.iniciarSesion:hover{
+    background: #54ff6d;
+}
+.recordar{
+    margin: 15px 4px;
+}
+.recordar a{
+    text-decoration: none;
+}
+.registrarse{
+    margin-top: 20px;
+}
+.registrarse a{
+    text-decoration: none;
+}
