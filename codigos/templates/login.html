@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="estiloLogin.css">
     <link rel="stylesheet" href="normalize.css">
     <link rel="icon" href="static/iconLogin.png">
+    <script src="loginScript.js"></script>
 </head>
 <body>
     <div class="form">
@@ -24,8 +25,35 @@
                 <a href="#">¿Olvido su contraseña?</a>
             </div>
             <input type="submit" class="iniciarSesion" value="Iniciar sesión">
+            <div class="avisoRegistro">
+                ¿No tienes una cuenta? <a onclick="mostrarRegistro()">Registrarse</a>
+            </div>
+        </form>
+    </div>
+    <div class="formRegistro">
+        <h1>Registrarse</h1>
+        <form method="post">
+            <div class="nombreCompleto">
+                <img src="static/fullName.svg" class="fullName">
+                <input type="text" placeholder="Nombre completo" required>
+            </div>
+            <div class="correoElectronico">
+                <img src="static/mail.svg" class="mail">
+                <input type="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="user">
+                <img class="userImg" src="static/person.svg">
+                <input type="text" placeholder="Usuario">
+            </div>
+            <div class="contrasena">
+                <img class="contrasenaImg" src="static/key.svg" required>
+                <input type="password" placeholder="Contraseña">
+            </div>
             <div class="registrarse">
-                ¿No tienes cuenta? <a href="#">Registrarse</a>
+                <input type="submit" class="registrar" value="Registrarse">
+            </div>
+            <div class="avisoIniciarSesion">
+                ¿Ya tienes una cuenta? <a onclick="mostrarLogin()">Iniciar sesión</a>
             </div>
         </form>
     </div>
