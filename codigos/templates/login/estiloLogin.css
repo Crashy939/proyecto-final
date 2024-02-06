@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../static/Roboto/Roboto') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.saludo{
+    width: 100vw;
+    background: linear-gradient(to bottom, #066cff, #1e8dff);
+    min-height: 3em;
+}
+
+.nav{
+    width: 100vw;
+    min-height: 2.4em;
+    background: #1e8dea;
+    margin-top: -16px;
+
+}
+.nav__ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav__li > a{
+    text-decoration: none;
+    color: darkslategrey;
+}
+.contenedorRegistro{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    min-height: 270px;
+    position: relative;
+    top: 50px;
+}
+.section__titulo{
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.contenedorRegistro__h3{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: -50px;
+}
+.section__form{
+    position: absolute;
+    top: 40%;
+}
+
+.form__input-matricula{
+    margin-top: -50px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.form__input-matricula:focus{
+    border-bottom: 5px solid orangered;
+}
+.form__input-CURP{
+    padding: 5px;
+    margin-left: 10px;
+    position: relative;
+    left: 28px;
+}
+
+.form__input-matricula::placeholder, .form__input-CURP::placeholder{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.form__input-CURP:focus{
+    border-bottom: 5px solid orangered;
+}
+.section__form > button{
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    left: 100px;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid gray;
+    color: gray;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+.form__button:hover{
+    cursor: pointer;
+    color: white;
+    background: #666666;
+    font-weight: 300;
+
+}
+.form__button:active{
+    background: #444444;
+}
+.section__form > label{
+    font-weight: 100;
+}

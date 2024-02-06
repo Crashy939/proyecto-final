@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../static/Roboto/Roboto') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Roboto', 'arial',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: #2856ff;
+    min-height: 4em;
+    border: #000010 2px solid;
+}
+.header__ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-content: center;
+}
+.header__li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    line-height: 1.1;
+}
+.header__li > a:hover{
+    color: white;
+}
+.header__li > a:active{
+    color: #bbbbbb;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+form > input:last-child{
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;    
+}
+textarea{
+    min-height: 200px;
+    max-height: 300px;
+    min-width: 800px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.comments-list {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.comment {
+    margin-bottom: 15px;
+}
+
+.comment p {
+    margin: 0;
+}

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../static/Roboto/Roboto') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background: #2856ff;
+    min-height: 4em;
+    border: #000010 2px solid;
+}
+.header__ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    align-content: center;
+}
+.header__li > a{
+    text-decoration: none;
+    color: black;
+    font-weight: 200;
+    line-height: 1.1;
+}
+.header__li > a:hover{
+    color: white;
+}
+.header__li > a:active{
+    color: #bbbbbb;
+}
+
+.mision{
+    border-radius: 12px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    min-height: 9em;
+    font-size: 19px;
+}
+.mision > h2{
+    color: darkblue;
+    font-weight: 400;
+}
+.vision{
+    border-radius: 14px;
+    min-height: 12em;
+    box-shadow:  0.3em 0.3em black;
+    font-size: 17px;;
+}
+.vision, .mision, footer > p{
+    margin-left: 2px;
+}
+.vision > h2{
+    color: darkred;
+}
+footer{
+    display: flex;
+    min-height: 4em;
+    background: #afafaf;
+    align-items: center;
+}
