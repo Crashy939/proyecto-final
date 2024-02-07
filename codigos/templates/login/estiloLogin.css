@@ -29,6 +29,9 @@ body {
     text-decoration: none;
     color: darkslategrey;
 }
+.nav__li > a:hover{
+    color: whitesmoke;
+}
 .contenedorRegistro{
     width: 50%;
     display: flex;
@@ -101,4 +104,51 @@ body {
 }
 .section__form > label{
     font-weight: 100;
+}
+aside p{
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 100;
+    background: linear-gradient(to bottom, #afafaf, #cfafcf);
+    outline: 3px solid lightcyan;
+    padding: 20px 15px;
+    border-radius: 18px;
+
+}
+.objetivo{
+    padding: 15px 20px;
+    border: none;
+    background: lightblue;
+    width: 12em;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    text-align: left;
+    border: #066cff 1px solid;
+}
+.objetivo:hover{
+    background: #91afff;
+    cursor: pointer;
+}
+.objetivo:active{
+    background: #81acfe;
+}
+#flechaAbajo{
+    position: relative;
+    left: 20px;
+    top: 5px;
+    transition: transform 0.5s;
+}
+footer{
+    display: flex;
+    min-height: 4em;
+    background: #afafaf;
+    align-items: center;
+    position: relative;
+    bottom: -120px;
 }
