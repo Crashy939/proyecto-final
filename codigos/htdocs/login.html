@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../estiloLogin.css">
+    <script src="scriptLogin.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1>Hola usuario!</h1><!--En esta parte, con base al login, mostrar el nombre del usuario-->
+            <ul class="header__ul">
+                <li class="header__li"><a href="index.html">Inicio</a></li>
+                <li class="header__li"><a href="values.html">Valores y acerca de</a></li>
+                <li class="header__li"><a href="feedback.html">Feedback</a></li>
+                <li class="header__li"><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2 class="section__titulo">Sistema de registro de asistencias</h2>
+        <hr>
+        <div class="contenedorRegistro">
+            <h3 class="contenedorRegistro__h3">Ingresar con Matrícula y CURP</h3>
+            <form class="section__form" action="verificar.php" method="post">
+                <label id="matricula" name="matricula">Matrícula</label> 
+                <input type="number" class="form__input-matricula" placeholder="Ingresar matrícula"
+                id="matricula" name="matricula">
+                <br>
+                <label id="curp" name="curp">CURP</label> 
+                <input type="text" class="form__input-CURP" placeholder="Ingresar CURP" id="curp" name="curp">
+                <button class="form__button">Ingresar</button>
+            </form>
+        </div>
+    </section>
+    <aside>
+        <button class="objetivo">Objetivo<img id="flechaAbajo" src="../arrowDown.svg"></button>
+        <p class="objetivo-p">El objetivo de este proyecto es desarrollar una plataforma para gestionar la asistencia de los estudiantes de una institución educativa mediante la implementación de identificaciones RFID en las credenciales de los alumnos. Esta plataforma notificará a los padres de familia a través de correo electrónico sobre la entrada, salida y horario de cada clase de sus hijos.</p>
+    </aside>
+    <footer>
+        <p><b>Proyecto realizado por: </b> Olaf Tzanahua Jiménez, Edmundo Isaac Gutiérrez Santos, Katya Jarely Perez Rico y Eduardo Florentino Sánchez</p>
+    </footer>
+    <script src="../scriptLogin.js"></script>
+</body>
+</html>

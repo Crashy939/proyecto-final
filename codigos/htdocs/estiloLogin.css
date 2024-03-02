@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../static/Roboto/Roboto') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.saludo{
+    width: 100vw;
+    background: linear-gradient(to bottom, #066cff, #1e8dff);
+    min-height: 3em;
+}
+
+.nav__ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.nav__li > a{
+    text-decoration: none;
+    color: darkslategrey;
+}
+.nav__li > a:hover{
+    color: whitesmoke;
+}
+.contenedorRegistro{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    min-height: 270px;
+    position: relative;
+    top: 50px;
+}
+.section__titulo{
+    font-size: 32px;
+    line-height: 1.4;
+}
+
+.contenedorRegistro__h3{
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: -50px;
+}
+.section__form{
+    position: absolute;
+    top: 40%;
+}
+
+.form__input-matricula{
+    margin-top: -50px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+.form__input-matricula:focus{
+    border-bottom: 5px solid orangered;
+}
+.form__input-CURP{
+    padding: 5px;
+    margin-left: 10px;
+    position: relative;
+    left: 28px;
+}
+
+.form__input-matricula::placeholder, .form__input-CURP::placeholder{
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.form__input-CURP:focus{
+    border-bottom: 5px solid orangered;
+}
+.section__form > button{
+    display: block;
+    margin-top: 20px;
+    position: relative;
+    left: 100px;
+    padding: 10px 20px;
+    background: none;
+    border: 1px solid gray;
+    color: gray;
+    font-weight: 400;
+    font-family: sans-serif;
+    letter-spacing: 0.5px;
+}
+.form__button:hover{
+    cursor: pointer;
+    color: white;
+    background: #666666;
+    font-weight: 300;
+
+}
+.form__button:active{
+    background: #444444;
+}
+.section__form > label{
+    font-weight: 100;
+}
+aside p{
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 16px;
+    font-weight: 100;
+    background: linear-gradient(to bottom, #afafaf, #cfafcf);
+    outline: 3px solid lightcyan;
+    padding: 20px 15px;
+    border-radius: 18px;
+
+}
+.objetivo{
+    padding: 15px 20px;
+    border: none;
+    background: lightblue;
+    width: 12em;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    text-align: left;
+    border: #066cff 1px solid;
+}
+.objetivo:hover{
+    background: #91afff;
+    cursor: pointer;
+}
+.objetivo:active{
+    background: #81acfe;
+}
+#flechaAbajo{
+    position: relative;
+    left: 20px;
+    top: 5px;
+    transition: transform 0.5s;
+}
+footer{
+    display: flex;
+    min-height: 4em;
+    background: #afafaf;
+    align-items: center;
+    position: relative;
+    bottom: -120px;
+}

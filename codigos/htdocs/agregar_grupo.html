@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Grupo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style_form.css">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <h1>Hola usuario!</h1><!--En esta parte, con base al login, mostrar el nombre del usuario-->
+            <ul class="header__ul">
+                <li class="header__li"><a href="agregar_grupo.html">agregar_grupo</a></li>
+                <li class="header__li"><a href="agregar_alumno.html">agregar alumno</a></li>
+                <li class="header__li"><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form">
+    <h1>Agregar Grupo</h1>
+    <form action="insertar_grupo.php" method="post">
+        <label for="id_grupo">ID del Grupo:</label>
+        <input type="text" id="id_grupo" name="id_grupo" required><br>
+        <label for="carrera">Carrera:</label>
+        <input type="text" id="carrera" name="carrera" required><br>
+        <label for="semestre">Semestre:</label>
+        <input type="text" id="semestre" name="semestre" required><br>
+        <label for="turno">Turno:</label>
+        <input type="text" id="turno" name="turno" required><br>
+        <button type="submit">Agregar Grupo</button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="style_form.css">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <h1>Hola usuario!</h1><!--En esta parte, con base al login, mostrar el nombre del usuario-->
+            <ul class="header__ul">
+                <li class="header__li"><a href="index.html">Inicio</a></li>
+                <li class="header__li"><a href="values.html">Valores y acerca de</a></li>
+                <li class="header__li"><a href="feedback.html">Feedback</a></li>
+                <li class="header__li"><a href="login.html">Login</a></li>
+                <li class="header__li"><a href="calendario.html">calendario</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <form action="consulta.php" method="post">
+        <label for="alumno_id">ID de Alumno:</label>
+        <input type="text" id="alumno_id" name="alumno_id"><br><br>
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
